@@ -2,253 +2,48 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      />
-      <link
-        href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        rel="stylesheet"
-      />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-      <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      />
-      <link
-        rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      />
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    </head>
-    <style>
-      .topnav {
-        overflow: hidden;
-        background-color: white;
-        padding-left:20px;
-        padding-right:20px;
-      }
-
-      .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
-      .topnav-right {
-        float: right;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      .menu {
-        float: left;
-        width: 20%;
-        text-align: center;
-      }
-      .menu a {
-        background-color: #e5e5e5;
-        padding: 8px;
-        margin-top: 7px;
-        display: block;
-        width: 100%;
-        color: black;
-      }
-      .main {
-        {% comment %} float: left; {% endcomment %}
-        width: 60%;
-      }
-      .amarnet-title {
-        color: #443cec;
-        font-size: 24px
-        background: #ffffff;
-        background: #000000;
-        background-blend-mode: color;
-        background: #3933ee;
-        background: linear-gradient(
-          90deg,
-          #ffffff 0%,
-          rgba(255, 255, 255, 0) 100%
-        );
-      }
-      .right {
-        background-color: #e5e5e5;
-        float: left;
-        width: 20%;
-        padding: 15px;
-        margin-top: 7px;
-        text-align: center;
-      }
-      .login-button {
-        font-style: "Inter", sans-serif;
-        font-size: 16px;
-        color: #3933ee;
-        font-weight: 700;
-        text-align: center;
-      }
-      .register-button {
-        font-style: "Inter", sans-serif;
-        font-size: 16px;
-        background: #3933ee;
-        font-weight: 700;
-        line-height: 20px;
-        letter-spacing: 0.5px;
-        text-align: center;
-
-      }
-      .font-style {
-        font-family: "Inter", sans-serif;
-        font-size: 60px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 71px;
-        letter-spacing: -0.005em;
-        text-align: left;
-      }
-      .small-title {
-        font-family: "Inter", sans-serif;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 38px;
-        letter-spacing: 0em;
-        text-align: left;
-      }
-      .center-title {
-        font-family: "Inter", sans-serif;
-        font-size: 40px;
-        color: #443cec;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 71px;
-        letter-spacing: -0.005em;
-        text-align: left;
-      }
-      .center-title-small {
-        font-family: "Inter", sans-serif;
-        font-size: 24px;
-        color: #040159;
-
-        font-style: normal;
-        font-weight: 400;
-
-        letter-spacing: -0.005em;
-        text-align: left;
-      }
-      .register-button {
-        .button {
-          background-color: #4caf50; /* Green */
-          border: none;
-          color: white;
-          padding: 20px;
-          text-align: center;
-          text-decoration: none;
-          display: inline-block;
-          font-size: 16px;
-          margin: 4px 2px;
-          cursor: pointer;
-        }
-      }
-      .icon-color{
-        color: #02ce8a;
-        width: 21.33px;
-        height: 29.24px;
-        top:1.38px;
-        left:5.33px;
-        font-size:21.33px;
-      }
-      .card-fonts{
-        font-style: "Inter", sans-serif;
-        font-size:24px;
-        font-weight: 700;
-      }
-      .card-custom{
-        background:#FFFFFF;
-        border: 1px solid rgba(32, 24, 104, 0.08);
-        box-sizing: border-box;
-        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
-        border-radius: 12px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 14px 0px 0px 14px;
-
-        position: static;
-        width: 256px;
-        height: 148px;
-        left: 0px;
-        top: 0px;
-      }
-
-      .register-button-rad {
-        font-style: "Inter", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #02ce8a;
-        border-radius: 15px;
-        border: none;
-       
-        position: static;
-
-      }
-      .background {
-        background-blend-mode: color, normal, normal;
-        background-image: url("back.png");
-        
-        #opacity: 0.2;
-      }
-      .register-button-last {
-        font-style: "Inter", sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-        background-color: #02ce8a;
-        border-radius: 5px;
-        border: none;
-
-      }
-      @media only screen and (max-width: 620px) {
-        /* For mobile phones: */
-        .menu,
-        .main,
-        .right {
-          width: 100%;
-        }
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   </head>
-  <body>
+  <body class="root-padding">
     <div class="topnav">
-      <a href="#"
-        ><strong style="color: #040159; font-size: 24px"
-          >amarnet</strong
-        ></a
-      >
+      <a href="#">
+        <strong style="color: #040159; font-size: 24px">amarnet</strong>
+      </a>
       <div class="topnav-right">
-        <a href="#login"
-          ><button type="button" class="btn login-button">Нэвтрэх</button></a
-        >
-        <a href="#register"
-          ><button type="button" class="btn btn-primary register-button">
-            Бүртгүүлэх
-          </button></a
-        >
+        <a href="#login">
+          <button type="button" class="btn login-button">Нэвтрэх</button>
+        </a>
+        <a href="#register">
+          <button type="button" class="btn btn-primary register-button">Бүртгүүлэх</button>
+        </a>
       </div>
     </div>
-    <div
-      style="background-color: white; padding-top: 240px; text-align: center"
-    >
+    <div class="container-cus">
       <div class="container-fluid">
-        <!-- <h1>Basic Grid Structure</h1> -->
-
         <div class="container-fluid">
           <div class="row">
             <div class="col-sm-6 font-style" style="background-color: white">
@@ -290,6 +85,7 @@
             </div>
           </div>
           <br />
+          
         </div>
       </div>
     </div>
@@ -299,11 +95,11 @@
         <h2 style="text-align: center" class="center-title">
           Та ямар чиглэлийн үйлчилгээ үзүүлдэг вэ?
         </h2>
-        <p style="text-align: center" class="center-title-small">
+        <p style="text-align: center; color: #040159;" class="center-title-small">
           Үйлчилгээнийхээ ангилалыг сонгоод <br />
           биднийг танд хэрхэн тусалж чадахыг хараарай
         </p>
-        <div style="padding-left: 50px; padding-right: 50px; padding-top: 40px">
+        <div class="row-cus">
           <!-- Row section 1 start-->
           <div>
             <div class="card-deck">
@@ -380,49 +176,283 @@
               </div>
             </div>
           </div>
-         
-          <!--<div  style="padding-top:80px">
-            <div class="row">
-              <div class="col-sm-6">
-                <p style="text-align: right;"> Удахгүй нэмэгдэх ангиллалууд </p> 
-                 <div class="col-sm-3">
-                <i class="material-icons" style="text-align: left; font-size:16px;"> keyboard_arrow_right</i>
-              </div>
-              </div>
-             
-            </div>
-          </div> -->
           <!-- Row section 2 end -->
           <div style="padding-top:80px">
             <dt> <p style="text-align: center; font-size:18px; color:#7974AA" >
               Удахгүй нэмэгдэх ангиллалууд <i class="material-icons" style="font-size:18px; "> keyboard_arrow_right</i>
             </p></dt>
           </div>
-         
           <div class="row">
-            <div class="offset-md-2 col-md-8 offset-md-2 background"> 
-              <div style="text-align: center; padding-top:320px; ">
-                <h2 style="text-align: center" class="center-title">
+            <div class="offset-md-3 col-md-6 offset-md-3 background"  style="height:700px"> 
+              <div class="override ship-help" >
+                <h2 style="text-align: center " class="center-title overlay">
                   Захиалга олоход <br>тань туслая
                 </h2>
                 <p style="text-align: center; font-size:18px; color:#3933EE" > Үйлчилгээ авах, зарахад ийм амар байгаагүй</p>  
-                <br style="padding-top:80px;"/>
+                 <br/>
                 <button type="button" class="register-button-last btn btn-primary">
                   Бүртгүүлэх
                 </button>
-             </div>
+               
+             </div> 
+             
           </div>
         </div>
       </div>
-    <div
-      style="
-        background-color: #e5e5e5;
-        text-align: center;
-        padding: 10px;
-        margin-top: 7px;
-      "
-    >
-      © copyright w3schools.com
+    
+    <div class="footer-cus">
+    <div class="topnav">
+      <a href="#"><strong style="color: #040159; font-size: 24px">amarnet</strong></a>
+      <div class="topnav-right">
+        <a href="#login"
+          ><button type="button" class="btn login-button">Нэвтрэх</button></a
+        >
+        <a href="#help"
+          ><button type="button" class="btn login-button">Тусламж</button></a
+        >
+        <a href="#contact"
+          ><button type="button" class="btn login-button">Холбогдох</button></a
+        >
+      </div>
+    </div>
+    <hr/>
+    <div class="topnav">
+      <a href="#">
+        <strong style="color: #040159; font-size: 12px">LPS LLC </strong>
+        <strong style="color: #040159; font-size: 12px; paddin-right:40px;"> Copyright © 2020</strong>
+      </a>
+      <div class="topnav-right">
+        <a href="#facebook"
+          ><button type="button" class="btn login-button"><i class='fab fa-facebook-f' style='font-size:24px'></i></button></a
+        >
+        <a href="#instagram"
+          ><button type="button" class="btn login-button"><i class='fab fa-instagram' style='font-size:24px'></i></button></a
+        >
+        <a href="#twitter"
+          ><button type="button" class="btn login-button"><i class='fab fa-twitter-square' style='font-size:24px'></i></button></a
+        >
+        <a href="#youtube"
+          ><button type="button" class="btn login-button"><i class='fab fa-youtube' style='font-size:24px'></i></button></a
+        >
+      </div>
     </div>
   </body>
 </html>
+<style>
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+  }
+  .root-padding {
+    padding-left:200px;
+    padding-right:200px;
+  }
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav-right {
+    float: right;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  .menu {
+    float: left;
+    width: 20%;
+    text-align: center;
+  }
+  .menu a {
+    background-color: #e5e5e5;
+    padding: 8px;
+    margin-top: 7px;
+    display: block;
+    width: 100%;
+    color: black;
+  }
+  .main {
+    {% comment %} float: left; {% endcomment %}
+    width: 60%;
+  }
+  .amarnet-title {
+    color: #443cec;
+    font-size: 24px
+    background: #ffffff;
+    background: #000000;
+    background-blend-mode: color;
+    background: #3933ee;
+    background: linear-gradient(
+      90deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  }
+  .right {
+    background-color: #e5e5e5;
+    float: left;
+    width: 20%;
+    padding: 15px;
+    margin-top: 7px;
+    text-align: center;
+  }
+  .login-button {
+    font-style: "Inter", sans-serif;
+    font-size: 16px;
+    color: #3933ee;
+    font-weight: 700;
+    text-align: center;
+  }
+  .register-button {
+    font-style: "Inter", sans-serif;
+    font-size: 16px;
+    background: #3933ee;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    text-align: center;
+
+  }
+  .font-style {
+    font-family: "Inter", sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
+  .small-title {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .center-title {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    color: #443cec;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 71px;
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
+  .center-title-small {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #040159;
+
+    font-style: normal;
+    font-weight: 400;
+
+    letter-spacing: -0.005em;
+    text-align: left;
+  }
+  .register-button {
+    .button {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  }
+  .icon-color{
+    color: #02ce8a;
+    width: 21.33px;
+    height: 29.24px;
+    top:1.38px;
+    left:5.33px;
+    font-size:21.33px;
+  }
+  .card-fonts{
+    font-style: "Inter", sans-serif;
+    font-size:24px;
+    font-weight: 700;
+  }
+  .card-custom{
+    background:#FFFFFF;
+    border: 1px solid rgba(32, 24, 104, 0.08);
+    box-sizing: border-box;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 0px 0px 14px;
+    position: static;
+    width: 256px;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+  }
+
+  .register-button-rad {
+    font-style: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #02ce8a;
+    border-radius: 15px;
+    border: none;
+    position: static;
+
+  }
+  .background {
+    background-blend-mode: color, normal, normal;
+    transform: rotate(1.38deg);
+    width: 720px;
+    height: 720px;
+    background: url(back.png);
+  }
+  .override {
+    opacity:1 !important;
+  }
+  .register-button-last {
+    font-style: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #02ce8a;
+    border-radius: 5px;
+    border: none;
+  }
+  .ship-help {
+    text-align:center; 
+    padding-top:300px; 
+    transform: rotate(-1.38deg); 
+  }
+  .row-cus {
+    padding-left: 50px; 
+    padding-right: 50px; 
+    padding-top: 40px;
+  }
+  .container-cus {
+      background-color: white; 
+      padding-top: 240px; 
+      text-align: center"
+  }
+  .footer-cus {
+    text-align: center;
+    padding: 10px;
+    margin-top: 7px;
+  }
+  @media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .menu,
+    .main,
+    .right {
+      width: 100%;
+    }
+  }
+</style>
